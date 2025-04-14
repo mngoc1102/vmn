@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About - Vu Minh Ngoc Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="audio-player" style="text-align: center; margin-bottom: 20px;">
+                <button id="toggleMusic" style="background-color:#800080; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px;">Play Music</button>
+                <audio id="backgroundMusic" loop>
+                        <source src="assets/CanYouHearMyHeartMoonLoversScarletHeartRyoOST-EpikHighLeeHi-4591379.mp3" type="audio/mpeg">
+                        Your browser does not support audio.
+                </audio>
+        </div>
+        
+        <script>
+                const toggleMusic = document.getElementById("toggleMusic");
+                const backgroundMusic = document.getElementById("backgroundMusic");
+        
+                toggleMusic.addEventListener("click", function() {
+                        if(backgroundMusic.paused) {
+                                backgroundMusic.play();
+                                toggleMusic.textContent = "Pause Music";
+                        } else {
+                                backgroundMusic.pause();
+                                toggleMusic.textContent = "Play Music";
+                        }
+                });
+        </script>
+        
+        <nav style="background-color: #FFC0CB; padding: 10px 0;">
+                <ul style="list-style: none; margin: 0; padding: 0; display: flex; justify-content: center;">
+                        <li style="margin: 0 15px;">
+                                <a href="index.html" style="color: #800080; text-decoration: none; font-size: 18px;">Home</a>
+                        </li>
+                        <li style="margin: 0 15px;">
+                                <a href="about.html" style="color: #800080; text-decoration: none; font-size: 18px;">About</a>
+                        </li>
+                        <li style="margin: 0 15px;">
+                                <a href="hobbies.html" style="color: #800080; text-decoration: none; font-size: 18px;">My Hobbies</a>
+                        </li>
+                        <li style="margin: 0 15px;">
+                                <a href="contact.html" style="color: #800080; text-decoration: none; font-size: 18px;">Contact</a>
+                        </li>
+                </ul>
+        </nav>
+</header>
+    
+    <div class="container">
+        <!-- About Me -->
+        <section class="about-me">
+            <h1>About Me</h1>
+            <p>
+                I am Vu Minh Ngoc, a final-year student majoring in Management of Enterprise and Technology.
+                With a passion for creativity and experience in brand management on social media platforms, 
+                I continuously learn and innovate to create high-quality media products.
+            </p>
+            <p>
+                My goal is to combine technological intelligence with creative style to create impressive 
+                visuals and modern communication solutions.
+            </p>
+            <figure>
+                <img src="assets/469478969_18433284694076824_5232927019250810054_n.jpg" alt="Illustrative image about me" style="max-width: 30%; height: auto; display: block; margin: 0 auto;">
+                <figcaption>My Portrait</figcaption>
+            </figure>
+        </section>
+        
+        <!-- Skills List -->
+        <section class="skills">
+            <h2>Skills & Experience</h2>
+            <ol>
+                <li>Media project management</li>
+                <li>Digital content strategy</li>
+                <li>Graphic design and video editing</li>
+                <li>Communication and teamwork skills</li>
+            </ol>
+        </section>
+    </div>
+    
+    <footer style="text-align: center; margin-top: 20px;">
+        <p>Connect with me on:</p>
+        <a href="https://www.facebook.com/" target="_blank" style="margin: 0 10px; display: inline-block; width: 40px; height: 40px; border-radius: 50%; overflow: hidden; background-color: #3b5998; display: flex; justify-content: center; align-items: center;">
+            <img src="assets/Facebook_Logo_(2019).png" alt="Facebook" style="width: 20px; height: 20px;">
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" style="margin: 0 10px; display: inline-block; width: 40px; height: 40px; border-radius: 50%; overflow: hidden; background-color: #E1306C; display: flex; justify-content: center; align-items: center;">
+            <img src="assets/Instagram-Logo-PNG-2018.png" alt="Instagram" style="width: 20px; height: 20px;">
+        </a>
+    </footer>
+</body>
+</html>
